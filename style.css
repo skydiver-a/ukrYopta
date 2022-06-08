@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .wrapper {
   max-width: 1280px;
   margin: 0 auto;
@@ -89,8 +93,8 @@ body {
   align-items: stretch;
   overflow: hidden;
   min-width: 600px;
-  max-width: 1024px;
-  width: calc(100% - 50px);
+  max-width: 1170px;
+  width: calc(100% - 100px);
   height: 100%;
 }
 @media screen and (max-width: 718px) {
@@ -150,31 +154,31 @@ body {
   background-size: auto 120%;
   background-position: center;
   cursor: pointer;
-  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+  transition: 0.35s cubic-bezier(0.96, -0.05, 1, 0.01);
 }
 .table__main .options .option:nth-child(1) {
-  --defaultBackground:#FF1800;
+  --defaultBackground: #FF1800;
 }
 .table__main .options .option:nth-child(2) {
-  --defaultBackground:#FF5F00;
+  --defaultBackground: #FF5F00;
 }
 .table__main .options .option:nth-child(3) {
-  --defaultBackground:#FFAE00;
+  --defaultBackground: #FFAE00;
 }
 .table__main .options .option:nth-child(4) {
-  --defaultBackground:#55A62A;
+  --defaultBackground: #55A62A;
 }
 .table__main .options .option:nth-child(5) {
-  --defaultBackground:#028E9B;
+  --defaultBackground: #028E9B;
 }
 .table__main .options .option:nth-child(6) {
-  --defaultBackground:#274F7D;
+  --defaultBackground: #274F7D;
 }
 .table__main .options .option:nth-child(7) {
-  --defaultBackground:#68237F;
+  --defaultBackground: #68237F;
 }
 .table__main .options .option.active {
-  flex-grow: 10000;
+  flex-grow: 100;
   transform: scale(1);
   max-width: 600px;
   margin: 0px;
@@ -182,7 +186,7 @@ body {
   background-size: auto 100%;
 }
 .table__main .options .option.active .shadow {
-  box-shadow: inset 0 -120px 120px -120px black, inset 0 -120px 120px -100px black;
+  box-shadow: 0px -100px 100px -100px rgba(0, 0, 0, 0.5) inset;
 }
 .table__main .options .option.active .label {
   bottom: 20px;
@@ -198,7 +202,7 @@ body {
 }
 .table__main .options .option:not(.active) .shadow {
   bottom: -40px;
-  box-shadow: inset 0 -120px 0px -120px black, inset 0 -120px 0px -100px black;
+  box-shadow: 0px -100px 100px -100px rgba(0, 0, 0, 0.5) inset;
 }
 .table__main .options .option:not(.active) .label {
   bottom: 10px;
@@ -213,7 +217,7 @@ body {
   bottom: 0px;
   left: 0px;
   right: 0px;
-  height: 120px;
+  height: 100px;
   transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
 }
 .table__main .options .option .label {
@@ -221,11 +225,10 @@ body {
   position: absolute;
   right: 0px;
   height: 40px;
-  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+  transition: 0.35s cubic-bezier(0.96, -0.05, 1, 0.01);
 }
 .table__main .options .option .label .icon {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   min-width: 40px;

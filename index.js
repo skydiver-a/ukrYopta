@@ -1,5 +1,3 @@
-const body = document.getElementsByTagName("body");
-const darkMode = document.querySelector(".darkmode");
 const options = document.querySelector('.options');
 const optBtns = document.querySelectorAll('.option');
 
