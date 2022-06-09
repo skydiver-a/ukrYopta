@@ -196,6 +196,9 @@ body {
   left: 0px;
   opacity: 1;
 }
+.table__main .options .option.active .option__content {
+  display: visible;
+}
 .table__main .options .option:not(.active) {
   flex-grow: 1;
   border-radius: 30px;
@@ -211,6 +214,9 @@ body {
 .table__main .options .option:not(.active) .label .info > div {
   left: 20px;
   opacity: 0;
+}
+.table__main .options .option:not(.active) .option__content {
+  display: none;
 }
 .table__main .options .option .shadow {
   position: absolute;
@@ -256,6 +262,33 @@ body {
 }
 .table__main .options .option .label .info .sub {
   transition-delay: 0.1s;
+}
+.table__main .options .option .option__content {
+  display: grid;
+  grid-template-columns: 5fr 1fr 5fr 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  gap: 10px;
+  position: absolute;
+  top: 1.5rem;
+  right: 1rem;
+  bottom: 1.5rem;
+  left: 1rem;
+}
+.table__main .options .option .option__content .option__content_box {
+  background-color: white;
+  color: var(--defaultBackground);
+}
+.table__main .options .option .option__content .option__content_box:nth-child(1) {
+  border-radius: 10px 0 0 0;
+}
+.table__main .options .option .option__content .option__content_box:nth-child(4) {
+  border-radius: 0 10px 0 0;
+}
+.table__main .options .option .option__content .option__content_box:nth-child(21) {
+  border-radius: 0 0 0 10px;
+}
+.table__main .options .option .option__content .option__content_box:nth-child(24) {
+  border-radius: 0 0 10px 0;
 }
 
 /*# sourceMappingURL=style.css.map */
