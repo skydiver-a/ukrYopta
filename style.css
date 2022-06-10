@@ -19,6 +19,7 @@ body {
   transition: 0.25s;
 }
 
+/* under construction */
 .darkmode {
   display: inline-block;
   font-size: 2rem;
@@ -38,7 +39,7 @@ body {
 .table__side {
   height: 90vh;
   display: grid;
-  grid-template-rows: 5% 45% 45% 1%;
+  grid-template-rows: 2% 46% 47% 3%;
   row-gap: 0.5rem;
 }
 .table__side .table__side_amount {
@@ -197,7 +198,7 @@ body {
   opacity: 1;
 }
 .table__main .options .option.active .option__content {
-  display: visible;
+  animation: fade-in 0.55s forwards;
 }
 .table__main .options .option:not(.active) {
   flex-grow: 1;
@@ -289,6 +290,21 @@ body {
 }
 .table__main .options .option .option__content .option__content_box:nth-child(24) {
   border-radius: 0 0 10px 0;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
